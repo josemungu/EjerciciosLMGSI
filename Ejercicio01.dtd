@@ -1,3 +1,7 @@
+<!ELEMENT placabase (mircorpocesador , memoria , modelo, fabricante)>
 <!ELEMENT microprocesador (#PCDATA)>
 <!ELEMENT memoria (#PCDATA)>
-<!ELEMENT modelo (#
+<!ELEMENT modelo (#PCDATA)>
+<!ELEMENT fabricante (Asus,Intel)>
+<!ELEMENT Asus (EMPTY)>
+<!ELEMENT Intel (EMPTY)>
