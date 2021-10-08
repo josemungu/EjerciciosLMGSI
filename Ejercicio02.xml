@@ -1,30 +1,53 @@
 <musica>
     <artistas>
-        <artistas>
-            <nombre>Annuel AA</nombre>
-            <fecha>26 noviembre 1992</fecha>
-            <nacionalidad>Puerto Rico</nacionalidad>
-        </artistas>
-        <artistas>
-            <nombre>Estopa</nombre>
-            <fecha> 1998</fecha>
-            <nacionalidad>España</nacionalidad>
-        </artistas>
-        <artistas>
-            <nombre>Bad Bunny</nombre>
-            <fecha> 10 de marzo de 1994</fecha>
-            <nacionalidad>Puerto Rico</nacionalidad>
-        </artistas>
+        <artista nombre = "Annuel AA"></artista>
+        <artista fecha = "26 de noviembre de 1992"></artista>
+        <artista nacionalidad = "Puerto Rico"></artista>
+    </artistas>
+    
+    <artistas> 
+        <artista nombre = "Karol G"></artista>
+        <artista fecha = "25 de febrero 1925"></artista>
+        <artista nacionalidad= "Colombia"></artista>
+    </artistas>
 
+    <artistas> 
+        <artista nombre = "Bad Bunny"></artista>
+        <artista fecha = "29 de febrero 1925"></artista>
+        <artista nacionalidad= "Puerto Rico"></artista>
     </artistas>
 
     <canciones>
-        <nombre>Rock</nombre>
-        <duracion>2:30</duracion>
-        <artista>The Beatles</artista>
+        <cancion nombre= "5 dias"></cancion>
+        <cancion duracion = "3:35"></cancion>
+        <cancion artista = "Towers"></cancion>
     </canciones>
-    <nacionalidad>
-        <nombre>Puerto Rico</nombre>
-        <codigo>35130</codigo>
-    </nacionalidad>
-</musica>
+
+    <canciones>
+        <cancion nombre = "El amanecer"></cancion>
+        <cancion duracion = "4:00"></cancion>
+        <cancion artista = "Dani Martin"></cancion>
+    </canciones>
+
+    <canciones>
+        <cancion nombre= "Hasta mañana"></cancion>
+        <cancion duracion = "3:37"></cancion>
+        <cancion artista = "Manuel"></cancion>
+    </canciones>
+
+
+    <nacionalidades>
+        <nacionalidad nombre= "España"></nacionalidad>
+        <nacionalidad codigo = "66987"></nacionalidad>
+    </nacionalidades>
+
+    <nacionalidades>
+        <nacionalidad nombre= "Colombia"></nacionalidad>
+        <nacionalidad codigo = "66587"></nacionalidad>
+    </nacionalidades>
+    
+    <nacionalidades>
+        <nacionalidad nombre= "Italia"></nacionalidad>
+        <nacionalidad codigo = "73987"></nacionalidad>
+    </nacionalidades>
+</musica>    
