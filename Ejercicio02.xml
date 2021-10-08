@@ -1,0 +1,30 @@
+<musica>
+    <artistas>
+        <artistas>
+            <nombre>Annuel AA</nombre>
+            <fecha>26 noviembre 1992</fecha>
+            <nacionalidad>Puerto Rico</nacionalidad>
+        </artistas>
+        <artistas>
+            <nombre>Estopa</nombre>
+            <fecha> 1998</fecha>
+            <nacionalidad>España</nacionalidad>
+        </artistas>
+        <artistas>
+            <nombre>Bad Bunny</nombre>
+            <fecha> 10 de marzo de 1994</fecha>
+            <nacionalidad>Puerto Rico</nacionalidad>
+        </artistas>
+
+    </artistas>
+
+    <canciones>
+        <nombre>Rock</nombre>
+        <duracion>2:30</duracion>
+        <artista>The Beatles</artista>
+    </canciones>
+    <nacionalidad>
+        <nombre>Puerto Rico</nombre>
+        <codigo>35130</codigo>
+    </nacionalidad>
+</musica>

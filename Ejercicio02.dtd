@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT musica ( artistas, canciones , nacionalidad)*>
+<!ELEMENT artista (nombre, fecha, nacionalidad)*>
+<!ELEMENT nombre (PCDATA)>
+<!ELEMENT fecha (PCDATA)>
+<!ELEMENT nacionalidad (PCDATA)>
+<!ELEMENT canciones (nombre , duracion , artista)*>
+<!ELEMENT nombre (PCDATA)>
+<!ELEMENT duracion (PCDATA)>
+<!ELEMENT artista (PCDATA)>
+<!ELEMENT nombre (PCDATA)>
+<!ELEMENT codigo (PCDATA)>
