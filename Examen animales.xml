@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE animales [
+]>
+                
+
+<animales>
+    <animal>
+        <serpiente nombre="Hola"/>
+        <serpiente fechaNacimiento="26/10/2003"/>
+        <serpiente especie="KingCobra"/>
+
+        <elefante nombre="Dumbo"/>
+        <elefante fechaNacimiento="19/08/1998"/>
+        <elefante especie="Opisthoteuthidae"/>
+       
+        <leon nombre="Paco"/>
+        <leon ADN="+"/>
+        <leon comida="carne"/>
+    
+    </animal>
+    
+    
+    
+</animales>

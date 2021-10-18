@@ -1,0 +1,19 @@
+<!ELEMENT animales (animal)*>
+<!ELEMENT animal (serpiente, elefante, leon)*>
+<!ELEMENT serpiente (nombre,fechaNacimiento,especie)*>
+<!ELEMENT nombre EMPTY>
+<!ELEMENT fechaNacimiento EMPTY>
+<!ELEMENT especie EMPTY>
+<!ELEMENT elefante (EMPTY)+>
+<!ELEMENT leon (nombre , ADN , comida)*>
+<!ELEMENT ADN EMPTY>
+<!ELEMENT comida EMPTY>
+<!ATTLIST serpiente nombre ID #REQUIRED
+                    fechaNacimiento CDATA #REQUIRED
+                    especie IDREF #REQUIRED>
+<!ATTLIST elefante nombre ID #REQUIRED
+                    fechaNacimiento CDATA #REQUIRED
+                    especie IDREF #REQUIRED>
+<!ATTLIST leon nombre ID #IMPLIED
+                ADN CDATA
+                comida IDREF #REQUIRED>

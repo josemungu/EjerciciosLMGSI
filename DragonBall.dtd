@@ -1,0 +1,18 @@
+<!ELEMENT DragonBall (personajes,capacidad,creadores)*>
+<!ELEMENT personajes (nombre , habilidad)*>
+<!ELEMENT nombre EMPTY>
+<!ELEMENT habilidad (EMPTY)+>
+<!ELEMENT edad (EMPTY)?>
+<!ELEMENT capacidad (fisica, magicas,instinto)>
+<!ELEMENT fisica EMPTY>
+<!ELEMENT magicas EMPTY>
+<!ELEMENT instinto EMPTY> 
+<!ATTLIST personaje nombre ID #REQUIRED
+                    habilidad CDATA #REQUIRED
+                    edad IDREF #REQUIRED>
+<!ATTLIST capacidad fisica ID #REQUIRED
+                    magica CDATA #REQUIRED
+                    instinto IDREF #REQUIRED>
+<!ATTLIST serpiente nombre ID #REQUIRED
+                    fechaNacimiento CDATA #REQUIRED
+                    especie IDREF #REQUIRED>
