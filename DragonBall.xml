@@ -2,9 +2,9 @@
 <!DOCTYPE DragonBall  SYSTEM "DragonBall.dtd">
 <DragonBall
     <personajes>
-        <personaje nombre="Son Goku" fechaNacimiento="25/10/2003"></personaje> 
-        <personaje nombre= "Vegeta" fechaNacimiento="14/08/1995"></personaje>
-        <personaje nombre ="Bulma" fechaNacimiento="26/02/1887"></personaje>
+        <personaje nombre="Son Goku" fechaNacimiento="25/10/2003" vida="muerto"></personaje> 
+        <personaje nombre= "Vegeta" fechaNacimiento="14/08/1995" vida="vivo"></personaje>
+        <personaje nombre ="Bulma" fechaNacimiento="26/02/1887" vida="vivo"></personaje>
     </personajes>
     <habilidades>
         <habilidad nombre="Son Goku" habilidad="eer movimientos de rivales"></habilidad>

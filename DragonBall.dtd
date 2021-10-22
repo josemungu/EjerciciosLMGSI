@@ -5,7 +5,7 @@
 <!ENTITY % repetido "nombre ID #REQUIRED">
 <!ENTITY % similar "personaje IDREF">
 <!ATTLIST personaje %repetido;>
-<!ATTLIST personaje
+<!ATTLIST personaje vida (vivo|muerto) "muerto"
            fechaNacimiento CDATA #REQUIRED> 
 <!ATTLIST habilidades %repetido;>
 <!ATTLIST habilidades %similar;>
@@ -15,5 +15,5 @@
 <!ATTLIST amigos %repetido;>
 <!ATTLIST amigos cercanos CDATA #IMPLIED
                 lejanos CDATA #IMPLIED>
-                
+
 ]>
