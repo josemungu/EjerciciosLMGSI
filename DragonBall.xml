@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE DragonBall  SYSTEM "DragonBall.dtd">
-<DragonBall
+<DragonBall>
     <personajes>
-        <personaje nombre="Son Goku" fechaNacimiento="25/10/2003" vida="muerto"></personaje> 
-        <personaje nombre= "Vegeta" fechaNacimiento="14/08/1995" vida="vivo"></personaje>
-        <personaje nombre ="Bulma" fechaNacimiento="26/02/1887" vida="vivo"></personaje>
+        <personaje nombre="SonGoku" fechaNacimiento="25/10/2003" vida="muerto"></personaje> 
     </personajes>
     <habilidades>
-        <habilidad nombre="Son Goku" habilidad="eer movimientos de rivales"></habilidad>
+        <habilidad nombre="SonGoku" habilidad="eer movimientos de rivales"></habilidad>
         <habilidad nombre="Vegeta" habilidad= "volar"></habilidad>
         <habilidad nombre="Inteligencia sobrehumana"></habilidad>
     </habilidades>
     <amigos>
-        <amigo nombre="Son Goku" amigoCercano="Krilin" amigoLejano="Piccolo"></amigo>
-        <amigo nombre="Vegeta" amigoCercano="Trunks" amigoLejano="Tarble"></amigo>
-        <amigo nombre= "Bulma" amigoCercano="Vegeta" amigoLejano="Tighs"></amigo>
+        <amigo nombre="Son Goku" amigoCercano="Krilin"></amigo>
+        <amigo nombre="Vegeta" amigoCercano="Trunks" ></amigo>
+        <amigo nombre= "Bulma" amigoCercano="Vegeta"></amigo>
     </amigos>
 </DragonBall>
-
-]>

@@ -1,19 +1,26 @@
 <!ELEMENT DragonBall ( personajes,habilidades+,amigos?)*>
-<!ELEMENT personajes (personaje)*>
-<!ELEMENT habilidades (habilidad)*>
-<!ELEMENT amigos (amigoCercano|amigoLejano)*>
-<!ENTITY % repetido "nombre ID #REQUIRED">
-<!ENTITY % similar "personaje IDREF">
-<!ATTLIST personaje %repetido;>
-<!ATTLIST personaje vida (vivo|muerto) "muerto"
-           fechaNacimiento CDATA #REQUIRED> 
-<!ATTLIST habilidades %repetido;>
-<!ATTLIST habilidades %similar;>
-<!ATTLIST habilidades 
-          fechaNacimiento CDATA #REQUIRED
-          nombre IDREF #REQUIRED>
-<!ATTLIST amigos %repetido;>
-<!ATTLIST amigos cercanos CDATA #IMPLIED
-                lejanos CDATA #IMPLIED>
 
-]>
+<!ELEMENT personajes (personaje)*>
+<!ELEMENT habilidades (habilidad)+>
+<!ELEMENT amigos (amigo)?>
+
+
+
+<!ENTITY % repetitivo "nombre ID #REQUIRED">
+<!ENTITY % similar "personaje IDREF #IMPLIED">
+
+<!ATTLIST personaje %repetitivo;>
+<!ATTLIST personaje vida (vivo|muerto) "muerto" 
+                    fechaNacimiento CDATA #REQUIRED
+                    nombre CDATA ID #REQUIRED>
+
+
+<!ATTLIST habilidades %repetitivo;>
+<!ATTLIST habilidades %similar;> 
+<!ATTLIST habilidad    nombre ID #REQUIRED
+                        habilidad IDREF #IMPLIED>
+
+<!ATTLIST amigos %repetitivo;>
+<!ATTLIST amigos %similar;>
+<!ATTLIST amigo nombre ID  #REQUIRED>
+                amigoCercano IDREF #IMPLIED> 
