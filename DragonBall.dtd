@@ -15,4 +15,5 @@
 <!ATTLIST amigos %repetido;>
 <!ATTLIST amigos cercanos CDATA #IMPLIED
                 lejanos CDATA #IMPLIED>
+                
 ]>
