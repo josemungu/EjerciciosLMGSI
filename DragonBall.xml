@@ -2,11 +2,13 @@
 <!DOCTYPE DragonBall  SYSTEM "DragonBall.dtd">
 <DragonBall>
     <personajes>
-        <personaje nombre="SonGoku" fechaNacimiento="25/10/2003" vida="muerto"></personaje> 
+        <personaje nombre="SonGoku" fechaNacimiento="25/10/2003" vida="muerto"/> 
     </personajes>
     <habilidades>
-        <habilidad nombre="SonGoku" habilidad="eer movimientos de rivales"></habilidad>
-        <habilidad nombre="Vegeta" habilidad= "volar"></habilidad>
+        <habilidad nombre="SonGoku" habilidad="eer movimientos de rivales">58818</habilidad>
+        <habilidad nombre="Vegeta" habilidad= "volar">
+            <nombreHab/>
+        </habilidad>
         <habilidad nombre="Inteligencia sobrehumana"></habilidad>
     </habilidades>
     <amigos>
