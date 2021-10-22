@@ -1,18 +1,18 @@
-<!ELEMENT DragonBall (personajes,capacidad,creadores)*>
-<!ELEMENT personajes (nombre , habilidad)*>
-<!ELEMENT nombre EMPTY>
-<!ELEMENT habilidad (EMPTY)+>
-<!ELEMENT edad (EMPTY)?>
-<!ELEMENT capacidad (fisica, magicas,instinto)>
-<!ELEMENT fisica EMPTY>
-<!ELEMENT magicas EMPTY>
-<!ELEMENT instinto EMPTY> 
-<!ATTLIST personaje nombre ID #REQUIRED
-                    habilidad CDATA #REQUIRED
-                    edad IDREF #REQUIRED>
-<!ATTLIST capacidad fisica ID #REQUIRED
-                    magica CDATA #REQUIRED
-                    instinto IDREF #REQUIRED>
-<!ATTLIST serpiente nombre ID #REQUIRED
-                    fechaNacimiento CDATA #REQUIRED
-                    especie IDREF #REQUIRED>
+<!ELEMENT DragonBall ( personajes,habilidades+,amigos?)*>
+<!ELEMENT personajes (personaje)*>
+<!ELEMENT habilidades (habilidad)*>
+<!ELEMENT amigos (amigoCercano|amigoLejano)*>
+<!ENTITY % repetido "nombre ID #REQUIRED">
+<!ENTITY % similar "personaje IDREF">
+<!ATTLIST personaje %repetido;>
+<!ATTLIST personaje
+           fechaNacimiento CDATA #REQUIRED> 
+<!ATTLIST habilidades %repetido;>
+<!ATTLIST habilidades %similar;>
+<!ATTLIST habilidades 
+          fechaNacimiento CDATA #REQUIRED
+          nombre IDREF #REQUIRED>
+<!ATTLIST amigos %repetido;>
+<!ATTLIST amigos cercanos CDATA #IMPLIED
+                lejanos CDATA #IMPLIED>
+]>
