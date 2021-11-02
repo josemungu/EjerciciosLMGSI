@@ -1,0 +1,29 @@
+<!ELEMENT>
+ANY (permite cualquier cosa dentro del elemento)
+EMPTY (Lelemento vacio)
+#PCDATA (cualquier cosa dentro del elemento y puede haber caracteres)
+
+
+
+CARDINALIDADES:
+
+?- puede aparecer de 0 a 1
+*- de 0 a ilimatadas veces
++- de 1 a ilimatadas veces
+| - elemento exclusion , puede aparecer uno u otro
+
+<!ATTLIST>
+
+#IMPLIED - atributo opcional
+#REQUIRED- atributo obligatorio
+#FIXED- atributo obligatorio con un valor determinado
+
+valores para atributo:
+
+CDATA 
+ENTITY (una entidad)
+ID (identificador unico)
+IDREF (una referencia)
+IDREFS (varias referencias)
+NMTOKENS(lista de nombres con espacios en su interior)
+NMTOKEN (nombre sin espacions)
