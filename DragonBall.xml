@@ -5,7 +5,7 @@
         <personaje nombre="SonGoku" fechaNacimiento="25/10/2003" vida="muerto"></personaje> 
     </personajes>
     <habilidades>
-        <habilidad nombre="SonGoku" habilidad="eer movimientos de rivales"></habilidad>
+        <habilidad nombre="SonGoku" habilidad="leer movimientos de rivales"></habilidad>
         <habilidad nombre="Vegeta" habilidad= "volar"></habilidad>
         <habilidad nombre="Inteligencia sobrehumana"></habilidad>
     </habilidades>
