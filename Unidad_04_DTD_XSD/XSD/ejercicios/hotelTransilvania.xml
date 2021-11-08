@@ -5,6 +5,12 @@ xsi:noNamespaceSchemaLocation="hotel.xsd">
         <poder>No envejece</poder>
         <poder>Transforma en animales</poder>
         <poder>Rápido</poder>
+        <debilidad>Fuego</debilidad>
+    </personaje>
+    <personaje nombre="Drácula">
+        <poder>No envejece</poder>
+        <poder>Transforma en animales</poder>
+        <poder>Rápido</poder>
         <debilidad>Ajo</debilidad>
         <debilidad>Sol</debilidad>
         <debilidad>Estaca en el corazón</debilidad>
