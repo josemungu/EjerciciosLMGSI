@@ -6,7 +6,7 @@ xsi:noNamespaceSchemaLocation="xml-xsd-ejercicio1.xsd">
     <calle>Avenida de la Fuente</calle>
     <numero>6</numero>
     <ciudad>Zafra</ciudad>
-    <provincia>Badajoz</provincia>
+    <provincia>Álava</provincia>
   </direccion>
   <telefono>924555555</telefono>
 </alumno>
