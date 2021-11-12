@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="alumno">
+  <xs:complexType>
+    <xs:all>
+      <xs:element name="nombre" type="xs:string"></xs:element>
+      <xs:element name="direccion" type="tipoDireccion"></xs:element>
+      <xs:element name="telefono" type="xs:string"></xs:element>
+    </xs:all>
+    <xs:attribute name="dni" type="xs:string"></xs:attribute>
+  </xs:complexType>
+</xs:element>
+  <xs:complexType name="tipoDireccion">
+    <xs:all>
+      <xs:element name="calle" type="xs:string"></xs:element>
+      <xs:element name="numero" type="xs:string"></xs:element>
+      <xs:element name="cuidad" type="xs:string"></xs:element>
+      <xs:element name="provincia" type="tipoProvincia"></xs:element>
+    </xs:all>
+  </xs:complexType>
+  <xs:simpleType name="TipoDNI">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d{8}[A-Z]"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoProvincia">
+      <xs:restriction base="xs:string">
+       <xs:enumeration value="Alaba"></xs:enumeration>
+        <xs:enumeration value="Almeria"></xs:enumeration>
+       <xs:enumeration value="Avila"></xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+
+  <xs:simpleType name="tipoProvinciaDos">
+    <xs:restriction base="xs:string">
+     <xs:pattern value="Alava|Almeria|Avila"></xs:pattern>
+    </xs:restriction>
+</xs:simpleType>
+</xs:schema>
