@@ -3,7 +3,7 @@
 xsi:noNamespaceSchemaLocation="datosFactura.xsd"> 
   <datos_empresa> 
     <nombre>Equipos Digitales S.L.</nombre> 
-    <poblacion cod_postal="28043">Madrid</poblacion> 
+    <poblacion>Madrid</poblacion> 
     <provincia>Madrid</provincia> 
     <dir>Av. Valladolid</dir> 
     <cif>Q-9876543</cif> 
@@ -11,7 +11,7 @@ xsi:noNamespaceSchemaLocation="datosFactura.xsd">
   </datos_empresa> 
   <datos_cliente n_cli="c879"> 
     <nombre>Darío, Bueno Gutiérrez</nombre> 
-    <poblacion cod_postal="28043">Madrid</poblacion> 
+    <poblacion>Madrid</poblacion> 
     <provincia>Madrid</provincia> 
     <dir_env>Av. Oporto nº7 4ºd</dir_env> 
   </datos_cliente>  
