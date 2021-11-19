@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:element name="Mascotas" type="tiendaMascotas"/>
+    <xs:element name="tiendaMascotas" type="tipoMascotas"/>
    
-    <xs:complexType name="tiendaMascotas" mixed="true">
+    <xs:complexType name="tipoMascotas" >
         <xs:all>
             <xs:element name="reptiles" type="tipoReptiles"/>
             <xs:element name="mamiferos" type="tipoMamiferos"/>
@@ -21,28 +21,45 @@
     
     <xs:complexType name="tipoReptil" mixed="true">
         <xs:all>
-            <xs:element name="peso" type="tipoPeso"></xs:element>
-            <xs:element name="longitud" type="tipoLongitud"></xs:element>
-            <xs:element name="edad" type="tipoEdad"></xs:element>
+            <xs:element name="peso" type="tipoPesO"></xs:element>
+            <xs:element name="longitud" type="tipoLongituD"></xs:element>
+            <xs:element name="edad" minOccurs="0" type="tipoAtrib"></xs:element>
         </xs:all>
     </xs:complexType>
+
+    <xs:simpleType name="tipoLongitud">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="800"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoPeso">
+        <xs:restriction base="tipoLongitud">
+            <xs:minInclusive value="100" />
+            <xs:maxInclusive value="200" />
+        </xs:restriction>
+    </xs:simpleType>
     
-    <xs:complexType name="tipoPeso">
-        <xs:attribute name="unidadMedida" type="xs:string"></xs:attribute>
+    <xs:complexType name="tipoPesO">
+        <xs:simpleContent>
+            <xs:extension base="tipoPeso">
+                <xs:attribute name="unidadMedida" type="xs:string"/>
+            </xs:extension>
+        </xs:simpleContent>
     </xs:complexType>
-   
-    <xs:complexType name="tipoLongitud">
-        <xs:attribute name="unidadMedida" type="xs:string"></xs:attribute>
-   
-    </xs:complexType>
-    <xs:complexType name="tipoEdad">
-        <xs:attribute name="unidadMedida" type="xs:string"></xs:attribute>
-    
+
+    <xs:complexType name="tipoLongituD">
+        <xs:simpleContent>
+            <xs:extension base="tipoLongitud">
+                <xs:attribute name="unidadMedida" type="xs:string"/>
+            </xs:extension>
+        </xs:simpleContent>
     </xs:complexType>
     
     <xs:complexType name="tipoMamiferos" mixed="true">
     <xs:sequence>
-        <xs:element name="mamifero" type="tipoMamifero"></xs:element>
+        <xs:element name="mamifero" maxOccurs="unbounded" type="tipoMamifero"></xs:element>
     </xs:sequence>
     </xs:complexType>
 
@@ -54,7 +71,7 @@
     </xs:all>
     </xs:complexType>
 
-    <xs:complexType name="tipoNombre" mixed="true">
+    <xs:complexType name="tipoNombre" >
         <xs:attribute name="valor" type="tipoPN"></xs:attribute>
     </xs:complexType>
 
@@ -75,9 +92,6 @@
     <xs:complexType name="tipoPerro"></xs:complexType>
     <xs:complexType name="tipoOrca"></xs:complexType>
     <xs:complexType name="tipoDelfin"></xs:complexType>
-
-    <xs:complexType name="tipoUnidadesMedida">
-    </xs:complexType>
 
     <xs:simpleType name="unidadesMedida">
         <xs:restriction base="xs:string">
@@ -125,16 +139,9 @@
         </xs:all>
     </xs:complexType>
 
-    <xs:complexType name="tipoCliente">
-        <xs:all>
-            <xs:element name="postal" type="xs:string"></xs:element>
-            <xs:element name="telefono" type="xs:string"></xs:element>
-            <xs:element name="email" type="xs:string"></xs:element>
-        </xs:all>
-        <xs:attribute name="nombre" type="xs:string"></xs:attribute>
-    </xs:complexType>
+  
     
-    <xs:complexType name="tipoClienteS">
+    <xs:complexType name="tipoCliente">
         <xs:complexContent>
       <xs:extension base="tipoDireccion">
         <xs:sequence>
