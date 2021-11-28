@@ -93,7 +93,7 @@
             <xs:pattern value=".+"></xs:pattern>
         </xs:restriction>
     </xs:simpleType>
-
+ 
     <xs:complexType name="tipoRaza">
         <xs:choice>
             <xs:element name="perro" type="tipoPerro"/>
