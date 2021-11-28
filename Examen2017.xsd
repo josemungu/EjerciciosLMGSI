@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="LosSimpson" type="tipoSimpson"/>
+    
+    <xs:complexType name="tipoSimpson">
+    <xs:all>
+        <xs:element name="personajes" type="tipoPersonaje"></xs:element>
+        <xs:element name="episodio" type="tipoEpisodios"></xs:element>
+        <xs:element name="secuela" type="tipoSecuela"></xs:element>
+    </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="tipoPersonaje">
+        <xs:attribute name="nombre" type="xs:string"/>
+    </xs:complexType>
+
+    <xs:complexType name="tipoEpisodios" mixed="true">
+        <xs:sequence>
+            <xs:element name="episodio" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoEpisodio">
+        <xs:all>
+            <xs:element name="continuacionDelCapitulo" type="tipoContinuacion"/>
+            <xs:element name="finalizacionDelCapitulo" type="tipoFinalizacion"/>
+        </xs:all>
+        <xs:attribute name="nombre" type="xs:string"/>
+    </xs:complexType>
+
+    <xs:complexType name="tipoContinuacion"/>
+    <xs:complexType name="tipoFinalizacion"/>
+
+    <xs:complexType name="tipoSecuela">
+    <xs:all>
+        <xs:element name="duracion" type="tipoDuracion"></xs:element>
+        <xs:element name="noPublica" type="tipoNPublica"></xs:element>
+        <xs:element name="id" type="tipoId"></xs:element>
+        <xs:element name="idioma" type="tipoIdioma"></xs:element>
+    </xs:all>
+    </xs:complexType>
+    
+    <xs:complexType name="tipoDuracion">
+    
+
+    
+    </xs:complexType>
+
+
+   
+
+       
+
+
+
+
+</xs:schema>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LosSimpson xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="Examen2017.xsd"/>
+    <personajes>
+        <personaje name="Lissa" edad="54"></personaje>
+        <personaje name="Liss" edad="54"></personaje>
+        <personaje name="Ssa" edad="54"></personaje>
+    </personajes>
+
+    <episodios>
+        <episodio nombre="Lissa va al parque"/>
+            <continuacionDelCapitulo/>
+        <episodio nombre="Hommer va la granja"/>
+            <finalizacionDelCapitulo/>
+    </episodios>
+    
+<secuela>
+    <duracion>
+        <duracion duracion="300"/>
+        <duracion duracion="320"/>
+    </duracion>
+    <noPublica valor="15000"/>
+    <id id="ACDT265"/>
+    <idioma> chiniese , japaniese, indian, chino</idioma>
+</secuela>
+
+</LosSimpson> 
