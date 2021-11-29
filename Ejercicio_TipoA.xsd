@@ -101,7 +101,7 @@
             <xs:element name="delfin" type="tipoDelfin"/>
         </xs:choice>
     </xs:complexType>
-
+ 
     <xs:complexType name="tipoPerro"/>
     <xs:complexType name="tipoOrca"/>
     <xs:complexType name="tipoDelfin"/>
