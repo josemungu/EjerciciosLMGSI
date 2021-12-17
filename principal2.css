@@ -1,0 +1,19 @@
+#img1{
+    display: block;
+    margin: auto;
+    width: 120 px;
+    height: 250px; 
+
+}
+
+.div1{
+    border: 1px black solid;
+    margin:auto; 
+    width:85%;
+    height:85%;
+    margin-right: 170px;
+}
+
+#fotoPrincipal{
+    
+}
