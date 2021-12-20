@@ -1,0 +1,51 @@
+#img1 {
+    display: block;
+    margin: auto;
+    width: 57%;
+    height: 50%;
+  }
+  
+  .clase1 {
+    border: 1px black solid;
+    margin: auto;
+    width: 100%;
+  }
+  
+  body {
+    background: linear-gradient(to bottom left, rgb(56, 56, 56), rgb(121, 121, 121));
+  }
+  
+  #div1 {
+    margin-top: 50px;
+    margin-left: 13em;
+    width: 900px;
+  }
+  
+  #div2 {
+    margin-top: 50px;
+    margin-left: 13em;
+    width: 1000px;
+  }
+  
+  .clase4 {
+    border: 1px black solid;
+    margin: auto;
+    width: 100%;
+  }
+  
+  .clase1 {
+    display: inline-block;
+    margin: auto;
+    width: 30%;
+  
+  
+  }
+  
+  .clase3 {
+    display: inline-block;
+    margin: auto;
+    width: 20%;
+  
+  }
+  
+ 
