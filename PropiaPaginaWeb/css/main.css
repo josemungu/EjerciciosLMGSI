@@ -1,0 +1,45 @@
+#lista li{
+    display: inline-block;
+    width: 1700px;
+    
+}
+
+#lista li img{
+    width: 100%;
+}
+
+#tabla1{
+    width: 100%;
+    margin-top: 40px;
+}
+
+#tabla1 img{
+    width: 100%;
+}
+
+#salto {
+    width: 100%;
+
+}
+
+#salto .saltos{
+    display: inline-block;
+    width: 33%;
+}
+
+#salto .saltos img{
+    width: 100%;
+}
+
+#red{
+    width: 100%;
+}
+
+#red .redes{
+    display: inline-block;
+    width: 33%;
+}
+
+#red .redes img{
+    width: 100%;
+}
