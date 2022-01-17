@@ -1,0 +1,55 @@
+/* Diferentes navegadores utilizan diferentes márgenes por defecto */
+body{
+    margin:0; /* Igualo los márgenes por defecto de cualquier navegador*/
+}
+
+/* Contenedor principal. Tendrá Flexbox */
+.container {
+    display:flex; /* flex es igual a inline-flex. Los elementos dentro de un flex son flex-items */
+    height: 100vh; /* Utiliza el 100% del alto del viewport (parte visible de la página) */ 
+    box-sizing: border-box; /* Unifica en un único valor de cada div los siguientes: margin, padding y border*/ 
+    flex-direction: row;
+    border: 3px solid red;
+
+}  
+
+/* Cada box tiene unas propiedades, son simplemente estéticas*/ 
+.box {
+  color: #fff;
+  font-size: 100px;
+  text-align: center;
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, .1);
+  padding: 10px;
+  width: 100%;
+
+}
+
+/* Colores de cada box */
+.box1 { background:#1abc9c;
+        flex:2;
+        align-self: flex-start;
+}
+.box2 { background:#3498db;
+        flex:4;
+        align-self:flex-start;
+}
+.box3 { background:#9b59b6;
+        flex:2;
+        align-self:flex-start;
+}
+.box4 { background:#34495e;
+        flex:2;
+        align-self:flex-start;
+}
+.box5 { background:#f1c40f;
+        flex:6;
+        align-self:flex-start;
+}
+.box6 { background:#e67e22;
+        flex:2;
+        align-self:flex-start;
+}
+
+.i {
+    font-size:25%;
+}

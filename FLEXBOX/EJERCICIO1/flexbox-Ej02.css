@@ -1,0 +1,10 @@
+.flexbox_container {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 10px solid red;
+    height: 100px;
+    box-sizing: border-box;
+
+}

@@ -1,0 +1,12 @@
+.flexbox_container {
+  display: flex;
+  background-color: white;
+  height: 97vh;
+  flex-wrap: wrap;
+  text-align: center;
+  border: 3px solid red;
+}
+
+.flexbox_container>div {
+  width: 33% ;
+}
