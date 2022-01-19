@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>tienda de deportes</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css">
+		body {
+			margin: 50px;
+			padding: 0px;
+			background: cornflowerblue;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 11pt;
+			color: #FFFFFF;
+			/*text-align:center;*/
+		}
+
+		h1 {
+			color: aquamarine;
+		}
+
+		a {
+			color: blueviolet;
+			/* Blanco */
+		}
+
+		a:hover {
+			color: #FFFFFF;
+			font-weight: bold;
+			text-decoration: none;
+		}
+
+	
+		
+	</style>
+</head>
+
+<body>
+	
+	<h1>TIENDA DE DEPORTES</h1>
+
+
+	<form id="form1" name="form1" method="post" action="/ServletEjemploFormularios">
+		<p>
+			<label for="Nombre">Nombre:</label>
+			<input type="text" name="Nombre" id="Nombre" />
+		</p>
+		<p>
+			<label for="Apellidos">Apellidos:</label>
+			<input type="text" name="Apellidos" id="Apellidos" />
+		</p>
+		<p>
+			<label for="Descripcion">Descripción: </label>
+			<textarea name="Descripcion" id="Descripcion" cols="45" rows="5"></textarea>
+		</p>
+		<p>
+			<input type="submit" name="Enviar" id="Enviar" value="Enviar el formulario" />
+		</p>
+	</form>
+	<p>&nbsp;</p>
+</body>
+
+</html>
