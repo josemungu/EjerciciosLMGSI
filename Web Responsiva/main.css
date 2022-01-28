@@ -1,4 +1,15 @@
-.menu{
+html {
+  box-sizing: border-box;
+}
+
+::before
+::after {
+  box-sizing: inherit;
+}
+
+
+
+.menu {
   background-color: red;
   width: 100%;
   padding: 10px;
@@ -6,12 +17,21 @@
   margin: -10px;
 }
 
-.anuncio img{
-  width: 100%;
-  
+.principal{
+  display: flex;
 }
 
-.anuncio{
+.anuncio img {
+  width: 100%;
+
+}
+
+.anuncio {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.noticia {
   display: flex;
   flex-wrap: wrap;
 }
@@ -74,9 +94,10 @@
     width: 100%;
   }
 
-  .publi {
+  .anuncio {
     display: none;
   }
+
   .noticia {
     width: 100%;
   }
